@@ -6,6 +6,7 @@ import Cart from "./components/cart/Cart";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./components/login/Login";
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Register from "./components/register/Register";
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="/about" element={<About />} exact />
           <Route path="/login" element={<Login />} exact />
           <Route path="/cart" element={<Cart />} exact />
+          <Route path="/register" element={<Register/>} exact />
           
         </Routes>
       </Router>
