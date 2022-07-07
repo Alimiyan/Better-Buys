@@ -11,7 +11,7 @@ function Cart() {
         <hr />
         <h4 className="">Price Details</h4>
         <hr />
-        <table class="table table-dark">
+        <table className="table table-dark">
           <thead>
               <th scope="col">Price</th>
               <th scope="col">Discount</th>
@@ -31,7 +31,7 @@ function Cart() {
         <hr />
         <h4>Cart Items</h4>
         <hr />
-        <table class="table table-dark">
+        <table className="table table-dark">
           <thead>
             <th>#</th>
             <th>Image</th>
