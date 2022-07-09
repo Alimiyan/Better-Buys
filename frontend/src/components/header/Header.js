@@ -13,7 +13,7 @@ function Header() {
           <Navbar.Collapse id="responsive-navbar-nav">
             <Nav className="me-auto">
               <Nav.Link href="#" onClick={()=>navigate('/cart')}>Cart</Nav.Link>
-              <Nav.Link href="#pricing">Pricing</Nav.Link>
+              <Nav.Link onClick={()=> navigate('/addproducts')} href="#">Add Products</Nav.Link>
               <NavDropdown title="Categories" id="collasible-nav-dropdown">
                 <NavDropdown.Item href="#action/3.1">Electronics</NavDropdown.Item>
                 <NavDropdown.Item href="#action/3.2">

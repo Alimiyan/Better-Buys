@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./components/login/Login";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Register from "./components/register/Register";
+import AddProducts from "./components/addProducts/AddProducts";
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path="/login" element={<Login />} exact />
           <Route path="/cart" element={<Cart />} exact />
           <Route path="/register" element={<Register/>} exact />
+          <Route path="/addproducts" element={<AddProducts/>} exact />
           
         </Routes>
       </Router>
