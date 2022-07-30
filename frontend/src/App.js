@@ -5,9 +5,11 @@ import About from "./components/about/About";
 import Cart from "./components/cart/Cart";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Login from "./components/login/Login";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import Register from "./components/register/Register";
 import AddProducts from "./components/addProducts/AddProducts";
+import ProductDetail from "./components/productDetail/ProductDetail";
+import UpdateProduct from "./components/updateProduct/UpdateProduct";
 
 function App() {
   return (
@@ -18,9 +20,10 @@ function App() {
           <Route path="/about" element={<About />} exact />
           <Route path="/login" element={<Login />} exact />
           <Route path="/cart" element={<Cart />} exact />
-          <Route path="/register" element={<Register/>} exact />
-          <Route path="/addproducts" element={<AddProducts/>} exact />
-          
+          <Route path="/register" element={<Register />} exact />
+          <Route path="/addproducts" element={<AddProducts />} exact />
+          <Route path="/:id/" element={<ProductDetail />} exact />
+          <Route path="/:id/update" element={<UpdateProduct />} exact />
         </Routes>
       </Router>
     </div>

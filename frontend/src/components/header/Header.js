@@ -29,7 +29,7 @@ function Header() {
               </NavDropdown>
             </Nav>
             <Nav>
-              <Nav.Link href="#deets">More deets</Nav.Link>
+              {/* <Nav.Link href="#deets">More deets</Nav.Link> */}
               <Nav.Link
                 className="btn btn-primary text-white"
                 eventKey={2}
