@@ -11,3 +11,11 @@ class Product(models.Model):
 
     def __str__(self):
         return self.name
+
+class User(models.Model):
+    password = models.CharField(max_length=255, blank=False, null=False)
+    email = models.CharField(max_length=255, blank=False, null=False)
+    date = models.DateTimeField(auto_now_add=True)
+    name = models.CharField(max_length=255)
+    def __str__(self):
+        return self.name
